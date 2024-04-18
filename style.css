@@ -1,15 +1,14 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
-body{
+body {
     background: linear-gradient(to right bottom, rgb(121, 78, 159), rgb(185, 83, 116));
 }
 
-#main{
+#main {
     min-height: 100vh;
     padding-bottom: 50px;
     display: flex;
@@ -17,7 +16,7 @@ body{
     align-items: flex-start;
 }
 
-#addBtn{
+#addBtn {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -28,49 +27,47 @@ body{
     outline: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color: 0.3s, ease;
+    transition: background-color 0.3s ease; /* Fixed transition property */
 }
 
-#addBtn:hover{
+#addBtn:hover {
     background-color: rgb(7, 121, 7);
-
 }
 
-.note{
+.note {
     width: 300px;
     background-color: rgb(135, 115, 115);
     margin: 15px;
     border-radius: 10px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: box-shadow 0.3s, ease;
+    transition: box-shadow 0.3s ease; /* Fixed transition property */
 }
 
-.note:hover{
+.note:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.tool{
+.tool {
     background-color: black;
     color: whitesmoke;
     padding: 5px;
     display: flex;
-    justify-content: flex end;
-
+    justify-content: flex-end; /* Corrected justify-content value */
 }
 
-.tool i{
+.tool i {
     padding: 5px;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Fixed transition property */
 }
 
-.tool i:hover{
+.tool i:hover {
     color: antiquewhite;
 }
 
-.note textarea{
-    width: 300px;
+.note textarea {
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
     border: none;
     min-height: 220px;
     resize: none;
@@ -80,6 +77,6 @@ body{
     background: transparent;
 }
 
-.note textarea:focus{
+.note textarea:focus {
     outline: none;
 }
